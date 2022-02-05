@@ -19,8 +19,20 @@
          	   .then(res => res.json())
           	   .then(data => susays.innerText = data.hitokoto);
     	</script>
+		<script>
+			document.onreadystatechange = subSomething;//当页面加载状态改变的时候执行这个方法. 
+			function subSomething() {
+				console.log(document.readyState);
+				if (document.readyState == 'complete')
+				{
+					$('div.loading').hide();
+				}
+			}
+		</script>
 	</head>
-	<body class="landing">
+	<!-- <body class="landing"> -->
+	<body>
+		<div class="loading"></div>
 		<div id="page-wrapper">
 
 			<!-- Header -->
@@ -37,7 +49,7 @@
 
 			<!-- Banner -->
 			<section id="banner">
-				<div class="content">
+				<div class="content m-font">
 					<header>
 						<h2>Chinaklp</h2>
 						<span class="panel-cover__subtitle panel-subtitle"><script>hitokoto()</script>
