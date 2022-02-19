@@ -14,24 +14,9 @@
          	   .then(res => res.json())
           	   .then(data => susays.innerText = data.hitokoto);
     	</script>
-		<script>
-			document.onreadystatechange = subSomething;//当页面加载状态改变的时候执行这个方法. 
-			function subSomething() {
-				console.log(document.readyState);
-				if (document.readyState == 'complete')
-				{
-					$('div.loading').hide();
-				}
-			}
-		</script>
 	</head>
-<<<<<<< HEAD
-	<!-- <body class="landing"> -->
 	<body>
 		<div class="loading"></div>
-=======
-	<body>
->>>>>>> 9da858fafcef28ec0ae44cbe167f17325b1ffc23
 		<div id="page-wrapper">
 
 			<!-- Header -->
