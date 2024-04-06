@@ -21,7 +21,7 @@
 
 header {
     z-index: 1000;
-    height: 65px;
+    height: 5vh;
     width: 100%;
     background-color: rgb(255, 181, 194);
     position: fixed;
@@ -32,7 +32,7 @@ header {
     position: absolute;
     padding-left: 25px;
     float: left;
-    line-height: 65px;
+    line-height: 5vh;
     text-transform: uppercase;
     font-size: 30px;
 }
@@ -81,13 +81,28 @@ header {
     transition: all 0.3s ease-in-out;
 }
 
-.p-global {
-    background-color: rgb(145, 145, 145);
-}
-
 @keyframes fadeIn {
     from {opacity: 0;}
     to {opacity: 1;}
+}
+
+@keyframes fadeInBoth {
+    from { 
+        opacity: 0; 
+        background-color: transparent;
+    }
+    to { 
+        opacity: 1; 
+        background-color: pink;
+    }
+}
+
+.fadein {
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.fadeinboth {
+    animation: fadeInBoth 1.5s ease-in-out;
 }
 
 .p-top {
@@ -104,10 +119,6 @@ header {
     background: linear-gradient(pink, rgb(255, 218, 115));
 }
 
-.p-top span {
-    animation: fadeIn 1.5s ease-in-out;
-}
-
 .p-top #word1 {
     font-size: 50px;
     font-weight: bold;
@@ -119,7 +130,7 @@ header {
 
 .p-img {
     width: 100%;
-    height: 500px;
+    height: 85vh;
     background-size: cover;
     background-attachment: fixed;
 }
@@ -137,6 +148,7 @@ header {
 }
 
 .p-word {
+    background-color: pink;
     padding: 50px 75px 50px 75px;
     font-size: 50px;
     color: rgb(255, 99, 128);
