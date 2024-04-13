@@ -8,12 +8,12 @@ $(window).scroll(function() {
     }
     
     wordPos = $('.text2').offset().top;
-    if (scrollPos + windowHeight / 2 > wordPos) {
+    if (scrollPos + parseInt(windowHeight * 0.66) > wordPos) {
         $('.text2').addClass('slideinfromright');
     }
     
     wordPos = $('.text3').offset().top;
-    if (scrollPos + windowHeight / 2 > wordPos) {
+    if (scrollPos + parseInt(windowHeight * 0.66) > wordPos) {
         $('.text3').addClass('slideinfromleft');
     }
 });

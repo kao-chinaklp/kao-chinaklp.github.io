@@ -1,0 +1,82 @@
+
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes fadeInBoth {
+    from { 
+        opacity: 0; 
+        background-color: transparent;
+    }
+    to { 
+        opacity: 0.85; 
+        background-color: pink;
+    }
+}
+
+@keyframes slideInFromBottom {
+    0% {
+        opacity: 0.85;
+        -moz-transform: translateY(100%);
+        -webkit-transform: translateY(100%);
+        -ms-transform: translateY(100%);
+    }
+    100% {
+        opacity: 0.85;
+        -moz-transform: translateY(0);
+        -webkit-transform: translateY(0);
+        -ms-transform: translateY(0);
+    }
+}
+
+@keyframes slideInFromLeft {
+    0% {
+        opacity: 0.85;
+        -moz-transform: translateX(-100%);
+        -webkit-transform: translateX(-100%);
+        -ms-transform: translateX(-100%);
+    }
+    100% {
+        opacity: 0.85;
+        -moz-transform: translateX(0%);
+        -webkit-transform: translateX(0%);
+        -ms-transform: translateX(0%);
+    }
+}
+
+@keyframes slideInFromRight {
+    0% {
+        opacity: 0.85;
+        -moz-transform: translateX(100%);
+        -webkit-transform: translateX(100%);
+        -ms-transform: translateX(100%);
+    }
+    100% {
+        opacity: 0.85;
+        -moz-transform: translateX(0);
+        -webkit-transform: translateX(0);
+        -ms-transform: translateX(0);
+    }
+}
+
+.fadein {
+    animation: fadeIn 1.5s ease-in-out forwards;
+}
+
+.fadeinboth {
+    animation: fadeInBoth 1.5s ease-in-out forwards;
+}
+
+.slideinfrombottom {
+    animation: slideInFromBottom 1s ease-in-out forwards;
+}
+
+.slideinfromleft {
+    animation: slideInFromLeft 1s ease-in-out forwards;
+}
+
+.slideinfromright {
+    animation: slideInFromRight 1s ease-in-out forwards;
+}
