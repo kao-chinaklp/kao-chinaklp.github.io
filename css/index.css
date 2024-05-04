@@ -135,7 +135,6 @@ header {
     opacity: 0;
     background-color: pink;
     padding: 50px 75px 50px 75px;
-    font-size: 50px;
     color: rgb(255, 99, 128);
     font-weight: bold;
     justify-content: center;
@@ -148,6 +147,12 @@ header {
     float: left;
     width: 100%;
     border-top: 0.5vh solid rgba(255, 81, 81, 0.678);
+}
+
+.text1 #content {
+    padding: 0 10vh;
+    float: inline-start;
+    font-size: large;
 }
 
 .text2 {
